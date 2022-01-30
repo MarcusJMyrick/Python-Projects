@@ -1,0 +1,7 @@
+print("Welcome to Marcus' tip calculator")
+bill = input("What was the total for tonights bill? $")
+percent = input("What percent would you like to tip? 10, 12, or 15? ")
+people = input("How many people are going to spilt the bill? ")
+tip = (float(bill) / float(people)) + ((float(bill) / float(people)) * (int(percent) / 100))
+print(f"Each person should: ${round(tip, 2)}")
+print(f"THe unrounded tip is ${tip}")
