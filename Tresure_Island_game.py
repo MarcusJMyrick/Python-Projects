@@ -39,6 +39,6 @@ if road == "left":
         else:
             print("Game Over. ")
     else:
-        print("You were attacked by a sea beast. Game Over. ")
+        print("You were attacked by a sea beast. Game Over.  ")
 else:
     print("You fell into a hole. Game Over. ")
