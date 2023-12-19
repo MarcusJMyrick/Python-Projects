@@ -24,13 +24,10 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************
 ''')
 print('Welcome to Treasure island. Your mission is to find the treasure!')
-road = input('You walk down a two way plit pathway and must choose between the left or right road. Please type "Left" or "Right". ').lower()
 
-if road == "left":
-    flood = input('The road begins to flood you hear strange noises coming from behind you. Do you "swim" or "wait" ').lower()
-    if flood == "wait":
-        door = input('You are driffed off into the water and washed up on another part of the island on this part of the island there is a castle with three doors "red" "blue" or "yellow". Pick the door you want to enter. ').lower()
-        if door == "yellow":
+if (road := input('You walk down a two way plit pathway and must choose between the left or right road. Please type "Left" or "Right". ').lower()) == "left":
+    if (flood := input('The road begins to flood you hear strange noises coming from behind you. Do you "swim" or "wait" ').lower()) == "wait":
+        if (door := input('You are driffed off into the water and washed up on another part of the island on this part of the island there is a castle with three doors "red" "blue" or "yellow". Pick the door you want to enter. ').lower()) == "yellow":
             print("You win! You found the treasure! Thanks for playing. ")
         elif door == "red":
             print("Eaten By a dragon. ")
